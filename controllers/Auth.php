@@ -38,6 +38,8 @@ class auth
                             $_SESSION['auth']=json_encode(['user'=>$admin['AdLogin'],'id'=>$admin['Id'],'role'=>$admin['AdRole']]);
                             header("location: index.php?goto=admin");
                             exit();
+                        } else {
+                            echo '<span style="color:red;">Identifiant ou Mot de pass incorrecte </span>';
                         }
                     }else{
                         header("location: index.php?goto=auth&target=UpdatePassword&id=".$admin['Id']);

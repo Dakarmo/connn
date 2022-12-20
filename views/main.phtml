@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/css/bootstrap-grid.min.css">
+    <!-- <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/bootstrap-grid.min.css"> -->
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <!-- <nav class="navbar navbar-light bg-light">
             <ul>
                 <?php if(isset($_SESSION['links'])): ?>
                     <?php foreach($_SESSION['links'] as $link): ?>
@@ -21,11 +22,25 @@
                  <?php endif ?>   
             </ul>
 
-        </nav>
+        </nav> -->
+        
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Connexion</a></li>
+
+                </ul>
+            </nav>
+    
     </header>
     <main class="container">
     <?php include $template ?>
     </main>
+    <footer>
+                        <p>bonjour</p>
+    </footer>
     <script src="asset/js/bootstrap.min.js"></script>
 </body>
 

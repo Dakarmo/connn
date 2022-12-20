@@ -3,6 +3,7 @@ namespace controllers;
 class settings
 {
     private $NavModel;
+    use \controllers\utils;
     public function __construct()
     {
         $this->NavModel=New \models\nav_links();

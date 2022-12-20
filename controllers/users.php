@@ -35,6 +35,8 @@ class users implements base
                      header("location:index.php");
 
                      exit();
+                } else {
+                    echo '<span style="color:red;"> Mot de pass non comforme </span>';
                 }
             }
         }

@@ -24,7 +24,7 @@ class admin implements base
     }
     public function store()
     {
-        
+       
     }
     public function destroy()
     {
